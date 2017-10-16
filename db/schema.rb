@@ -15,14 +15,14 @@ ActiveRecord::Schema.define(version: 20171016085539) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "name1_kanji"
-    t.string   "namae2_kanji"
+    t.string   "name2_kanji"
     t.string   "name1_yomi"
     t.string   "name2_yomi"
     t.integer  "postalcode"
     t.string   "address1"
     t.string   "address2"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

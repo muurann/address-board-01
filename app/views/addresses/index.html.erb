@@ -1,2 +1,16 @@
-<h1>Addresses#index</h1>
-<p>Find me in app/views/addresses/index.html.erb</p>
+<%= form_for(@address) do |f| %>
+    <h2>氏名</h2>
+    姓：<%= f.text_field :name1_kanji %>
+    名：<%= f.text_field :name2_kanji %>
+    </br>
+    せい：<%= f.text_field :name1_yomi %>
+    めい：<%= f.text_field :name2_yomi %>
+    
+    <h2>住所</h2>
+    郵便番号：<%= f.text_field :postalcode %>
+    </br>
+    住所1：<%= f.text_field :address1 %>    
+    住所2：<%= f.text_field :address2 %>
+    
+    <%= f.submit %>
+<% end %>
